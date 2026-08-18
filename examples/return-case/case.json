@@ -1,0 +1,7 @@
+{
+  "title": "Return a damaged order",
+  "recipient": "Acme Support",
+  "goal": "Request a return label and replacement",
+  "deadline": "2026-08-30",
+  "tags": ["return", "support", "example"]
+}

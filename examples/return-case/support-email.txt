@@ -1,0 +1,6 @@
+From: alex@example.com
+To: Acme Support
+Subject: Return request for RET-2048
+
+The left speaker stopped working on first use. Please send a return label and
+confirm whether a replacement is available.

@@ -1,0 +1,6 @@
+ORDER RECEIPT — SYNTHETIC EXAMPLE
+Order: RET-2048
+Item: Quiet headphones
+Purchase date: 2026-08-11
+Amount: $79.00
+Issue: Left speaker stopped working after opening the package.

@@ -1,0 +1,30 @@
+{
+  "name": "evidence-lane",
+  "version": "0.1.0",
+  "description": "Turn messy local evidence into an honest, share-ready case packet.",
+  "type": "module",
+  "bin": {
+    "evidence-lane": "dist/src/cli.js",
+    "evlane": "dist/src/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "lint": "tsc --noEmit -p tsconfig.json",
+    "pack:demo": "node dist/src/cli.js pack examples/return-case --format html --output examples/return-case/return-packet.html"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md",
+    "CONTRIBUTING.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}

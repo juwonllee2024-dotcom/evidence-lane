@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evidence Lane — Return a damaged order</title>
+  <style>
+    :root { color-scheme: light; --ink:#172033; --muted:#647089; --line:#e4e8f0; --paper:#fff; --wash:#f5f7fb; --accent:#7357ff; --high:#c43d5b; --review:#bb7414; --clear:#16734a; }
+    * { box-sizing:border-box; } body { margin:0; color:var(--ink); background:var(--wash); font:15px/1.55 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif; }
+    main { max-width:1040px; margin:0 auto; padding:48px 20px 80px; } .hero { background:linear-gradient(135deg,#171d38,#40307d); color:#fff; border-radius:24px; padding:32px; box-shadow:0 20px 50px #25306120; }
+    .eyebrow { color:#8d79ff; font-size:12px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; } .hero .eyebrow { color:#bdb2ff; }
+    h1 { margin:6px 0 10px; font-size:clamp(30px,5vw,52px); letter-spacing:-.04em; line-height:1.05; } h2 { margin:34px 0 14px; } h3 { margin:3px 0 0; overflow-wrap:anywhere; }
+    .subtitle { color:#d9d7ec; margin:0; max-width:700px; } .facts { display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; } .fact { background:#ffffff18; border:1px solid #ffffff2d; border-radius:12px; padding:9px 12px; }
+    .panel { background:var(--paper); border:1px solid var(--line); border-radius:18px; padding:22px; margin-top:18px; } .notice { border-left:4px solid var(--review); } .notice strong { color:var(--review); }
+    .checklist { display:grid; gap:10px; padding:0; list-style:none; } .checklist li { padding-left:26px; position:relative; } .checklist li::before { content:'□'; position:absolute; left:0; color:var(--accent); font-size:20px; line-height:1; }
+    .toolbar { display:flex; gap:12px; align-items:center; margin:28px 0 14px; } input { flex:1; border:1px solid var(--line); border-radius:12px; padding:12px 14px; font:inherit; background:#fff; } .count { color:var(--muted); white-space:nowrap; }
+    .evidence-list { display:grid; gap:14px; } .evidence { background:var(--paper); border:1px solid var(--line); border-radius:16px; padding:20px; } .evidence[data-risk='high'] { border-color:#e9b7c2; } .evidence-head { display:flex; justify-content:space-between; gap:18px; align-items:flex-start; } .risk { border-radius:99px; font-size:11px; font-weight:800; padding:4px 9px; letter-spacing:.05em; } .risk-high { color:var(--high); background:#fdebf0; } .risk-review { color:var(--review); background:#fff3dd; } .risk-none { color:var(--clear); background:#e6f6ee; }
+    .risk-detail { color:var(--muted); margin:12px 0; } .hash { display:grid; gap:4px; color:var(--muted); font-size:12px; } code { overflow-wrap:anywhere; color:var(--ink); } details { margin-top:16px; } summary { cursor:pointer; color:var(--accent); font-weight:700; } pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f7f8fc; border-radius:12px; padding:14px; max-height:360px; overflow:auto; }
+    footer { color:var(--muted); margin-top:28px; font-size:13px; } .empty { color:var(--muted); text-align:center; padding:32px; }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">Evidence Lane · local packet</div>
+      <h1>Return a damaged order</h1>
+      <p class="subtitle">A reviewable path from scattered proof to a ready-to-send case file. No upload. No invented facts.</p>
+      <div class="facts"><span class="fact">4 files</span><span class="fact">4 flagged matches</span><span class="fact">Acme Support</span></div>
+    </section>
+    <section class="panel notice"><strong>Review flagged items before sharing.</strong><div>Evidence Lane reports obvious patterns; it is not a guarantee that every private detail has been found.</div></section>
+    <section class="panel"><h2>Case brief</h2><p><strong>Goal:</strong> Request a return label and replacement</p><p><strong>Deadline:</strong> 2026-08-30</p><p><strong>Generated:</strong> 2026-08-18T05:05:32.338Z</p></section>
+    <section class="panel"><h2>Sharing checklist</h2><ul class="checklist"><li>Review every HIGH or REVIEW item before sharing.</li><li>Confirm the recipient and purpose; this packet does not make legal or factual claims.</li><li>Original files are read-only to Evidence Lane and remain outside the packet.</li><li>Use each SHA-256 value to verify the attachment you actually reviewed.</li></ul></section>
+    <div class="toolbar"><input id="filter" type="search" placeholder="Filter evidence by filename or risk…" aria-label="Filter evidence"><span class="count" id="count">4 items</span></div>
+    <section class="evidence-list" id="evidence-list">
+    <article class="evidence" data-risk="none" data-search="E1 case.json No obvious matches">
+      <div class="evidence-head">
+        <div><span class="eyebrow">E1</span><h3>case.json</h3></div>
+        <span class="risk risk-none">CLEAR</span>
+      </div>
+      <p class="risk-detail">No obvious matches</p>
+      <div class="hash"><span>SHA-256</span><code>b61bf9e91aeb0a64b067b1b203c9acd4405a9094dcba53253fdbb79e86363377</code></div>
+      <details><summary>Show redacted preview</summary><pre>{
+  &quot;title&quot;: &quot;Return a damaged order&quot;,
+  &quot;recipient&quot;: &quot;Acme Support&quot;,
+  &quot;goal&quot;: &quot;Request a return label and replacement&quot;,
+  &quot;deadline&quot;: &quot;2026-08-30&quot;,
+  &quot;tags&quot;: [&quot;return&quot;, &quot;support&quot;, &quot;example&quot;]
+}
+</pre></details>
+    </article>
+    <article class="evidence" data-risk="none" data-search="E2 receipt.txt No obvious matches">
+      <div class="evidence-head">
+        <div><span class="eyebrow">E2</span><h3>receipt.txt</h3></div>
+        <span class="risk risk-none">CLEAR</span>
+      </div>
+      <p class="risk-detail">No obvious matches</p>
+      <div class="hash"><span>SHA-256</span><code>eba873c098c2f98cdd7d3982891c8f5753947c374d749d3d924278a43255f298</code></div>
+      <details><summary>Show redacted preview</summary><pre>ORDER RECEIPT — SYNTHETIC EXAMPLE
+Order: RET-2048
+Item: Quiet headphones
+Purchase date: 2026-08-11
+Amount: $79.00
+Issue: Left speaker stopped working after opening the package.
+</pre></details>
+    </article>
+    <article class="evidence" data-risk="review" data-search="E3 support-email.txt Email address (1; lines 1)">
+      <div class="evidence-head">
+        <div><span class="eyebrow">E3</span><h3>support-email.txt</h3></div>
+        <span class="risk risk-review">REVIEW</span>
+      </div>
+      <p class="risk-detail">Email address (1; lines 1)</p>
+      <div class="hash"><span>SHA-256</span><code>593db78ec1b5cd5b83219724bf382fcc6111fcd956be488aba103a61f1861e6f</code></div>
+      <details><summary>Show redacted preview</summary><pre>From: [EMAIL REDACTED]
+To: Acme Support
+Subject: Return request for RET-2048
+
+The left speaker stopped working on first use. Please send a return label and
+confirm whether a replacement is available.
+</pre></details>
+    </article>
+    <article class="evidence" data-risk="review" data-search="E4 timeline.md Email address (1; lines 5); Labeled address (1; lines 8); Phone number (1; lines 9)">
+      <div class="evidence-head">
+        <div><span class="eyebrow">E4</span><h3>timeline.md</h3></div>
+        <span class="risk risk-review">REVIEW</span>
+      </div>
+      <p class="risk-detail">Email address (1; lines 5); Labeled address (1; lines 8); Phone number (1; lines 9)</p>
+      <div class="hash"><span>SHA-256</span><code>09496f525ef5d02475ad1a3803ca507f33dea92d978cac9bb1661df0c8a3c1f6</code></div>
+      <details><summary>Show redacted preview</summary><pre># What happened
+
+- 2026-08-11 — Order received.
+- 2026-08-12 — Left speaker stopped working during the first use.
+- 2026-08-13 — Support was contacted from [EMAIL REDACTED].
+- 2026-08-14 — Follow-up requested because no return label arrived.
+
+Address: [ADDRESS REDACTED]
+Phone: [PHONE REDACTED]
+</pre></details>
+    </article></section>
+    <footer>Generated locally by Evidence Lane 0.1.0 · source files were not modified.</footer>
+  </main>
+  <script>
+    const input = document.querySelector('#filter');
+    const cards = [...document.querySelectorAll('.evidence')];
+    const count = document.querySelector('#count');
+    input.addEventListener('input', () => {
+      const query = input.value.toLowerCase().trim();
+      let visible = 0;
+      cards.forEach((card) => { const show = !query || card.dataset.search.toLowerCase().includes(query); card.hidden = !show; if (show) visible += 1; });
+      count.textContent = visible + ' items';
+    });
+  </script>
+</body>
+</html>
